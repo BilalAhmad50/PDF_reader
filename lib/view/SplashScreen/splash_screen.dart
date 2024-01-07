@@ -5,7 +5,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pdf/const/app_color.dart';
 import 'package:pdf/const/app_style.dart';
 import 'package:pdf/const/sizedbox_ext.dart';
-import 'package:pdf/view/BottomNavigationBar/bnb_bar.dart';
 import 'package:pdf/view/WelcomeScreen/welcome_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -19,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
  @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 5), () {
+    Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(

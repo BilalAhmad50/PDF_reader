@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:pdf/Provider/favorite_provider.dart';
 import 'package:pdf/const/app_color.dart';
 import 'package:pdf/const/app_style.dart';
 import 'package:pdf/const/sizedbox_ext.dart';
 import 'package:pdf/customweight/searchTextF.dart';
 import 'package:pdf/customweight/CustomRow/custom_row.dart';
+import 'package:pdf/model/Provider/favorite_provider.dart';
 import 'package:pdf/view/ImportFiles/import_files.dart';
 import 'package:provider/provider.dart';
 

@@ -2,10 +2,6 @@
 class DocumentContent {
   String image;
   String subIamge;
-  // String description;
-  // String price;
-  // String lockIcon;
-  // String ratingIcon;
 
   DocumentContent(
     this.image,

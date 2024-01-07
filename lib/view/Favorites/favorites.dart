@@ -2,12 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:pdf/Provider/favorite_provider.dart';
 import 'package:pdf/const/app_color.dart';
 import 'package:pdf/const/app_style.dart';
 import 'package:pdf/const/sizedbox_ext.dart';
 import 'package:pdf/customweight/searchTextF.dart';
 import 'package:pdf/customweight/CustomRow/custom_row.dart';
+import 'package:pdf/model/Provider/favorite_provider.dart';
 import 'package:provider/provider.dart';
 
 class MyFavoritesScreen extends StatefulWidget {
@@ -25,7 +25,7 @@ class _MyFavoritesScreenState extends State<MyFavoritesScreen> {
   @override
   Widget build(BuildContext context) {
     final provider =
-        Provider.of<FavoriteProvider>(context); // Get the provider instance
+        Provider.of<FavoriteProvider>(context); 
 
     return SafeArea(
       child: Scaffold(
@@ -103,7 +103,7 @@ class _MyFavoritesScreenState extends State<MyFavoritesScreen> {
                             });
                           },
                           onOtherAction: () {
-                            // Implement your logic for other actions
+                            
                           }, onStarTap: () {  },
                         ),
                       ],

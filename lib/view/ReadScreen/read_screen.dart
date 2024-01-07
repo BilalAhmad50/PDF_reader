@@ -66,10 +66,9 @@ class _ReadScreenState extends State<ReadScreen> {
                 setState(() {
                   selectedIndex = index;
                 });
-                // Scroll to the selected index in the horizontal list
                 _scrollController.animateTo(
                   index *
-                      (90.w + 1.w), // Adjust the item width and separator width
+                      (90.w + 1.w), 
                   duration: Duration(milliseconds: 500),
                   curve: Curves.easeInOut,
                 );

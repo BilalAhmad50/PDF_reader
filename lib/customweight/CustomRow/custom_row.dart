@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pdf/Provider/favorite_provider.dart';
-import 'package:pdf/Provider/recent_provider.dart';
 import 'package:pdf/const/app_color.dart';
 import 'package:pdf/const/app_style.dart';
 import 'package:pdf/const/sizedbox_ext.dart';
 import 'package:pdf/customweight/bottomSheet/buttom_sheet.dart';
+import 'package:pdf/model/Provider/favorite_provider.dart';
+import 'package:pdf/model/Provider/recent_provider.dart';
 import 'package:pdf/view/ReadScreen/read_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -14,7 +14,7 @@ class CustomRow extends StatelessWidget {
   final String subTitle;
   final VoidCallback onDelete;
   final VoidCallback onOtherAction;
-  final VoidCallback onStarTap; // Add this line
+  final VoidCallback onStarTap; 
 
   const CustomRow({
     Key? key,

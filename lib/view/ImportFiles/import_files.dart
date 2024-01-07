@@ -93,14 +93,10 @@ class _ImportFilesState extends State<ImportFiles> {
       ),
     );
   }
-
   Widget buildGridItem(DocumentContent item) {
     return Stack(
       children: [
-        // Main image
         Image(image: AssetImage(item.image)),
-
-        // Sub-image positioned on top
         Positioned(
           top: 10,
           right: 25,

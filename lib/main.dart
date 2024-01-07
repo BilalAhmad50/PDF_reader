@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pdf/Provider/favorite_provider.dart';
-import 'package:pdf/Provider/recent_provider.dart';
-import 'package:pdf/SplashScreen/splash_screen.dart';
+import 'package:pdf/model/Provider/favorite_provider.dart';
+import 'package:pdf/model/Provider/recent_provider.dart';
+import 'package:pdf/view/SplashScreen/splash_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -14,22 +14,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final GlobalKey<NavigatorState> navigatorKey = GlobalKey();
-
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
           create: (context) => FavoriteProvider(),
-          key: UniqueKey(), // Add this line
         ),
         ChangeNotifierProvider(
           create: (context) => RecentProvider(),
-          key: UniqueKey(),
         ),
       ],
       child: ScreenUtilInit(
         builder: (_, child) => MaterialApp(
-          navigatorKey: navigatorKey,
           debugShowCheckedModeBanner: false,
           title: 'Your App Title',
           theme: ThemeData(

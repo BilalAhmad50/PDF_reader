@@ -7,8 +7,8 @@ import 'package:pdf/const/app_style.dart';
 import 'package:pdf/const/sizedbox_ext.dart';
 import 'package:pdf/customweight/CustomRow/custom_row.dart';
 import 'package:pdf/customweight/searchTextF.dart';
-import 'package:pdf/Provider/favorite_provider.dart';
-import 'package:pdf/Provider/recent_provider.dart';
+import 'package:pdf/model/Provider/recent_provider.dart';
+
 import 'package:provider/provider.dart';
 
 class MyRecentScreen extends StatefulWidget {
@@ -105,10 +105,10 @@ class _MyRecentScreenState extends State<MyRecentScreen> {
                             });
                           },
                           onOtherAction: () {
-                            // Implement other action logic
+                         
                           },
                           onStarTap: () {
-                            // Implement star tap logic
+                           
 
                           },
                         ),
